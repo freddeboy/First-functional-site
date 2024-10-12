@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Top grey rectangle   Where search bar is -->
+  <div class="Top-rectangle"></div> 
+
+   <!-- Search bar -->
+  <div class="search-container">
+    <i class="fa fa-search search-icon"></i>
+    <input type="text" id="searchInput" class="search-input" placeholder="Searchbar">
+  </div>
+
+  <!-- Carousel -->
+  <div class="carousel">
+    <button class="nav prev" onclick="prevSlide()">&#9664;</button>
+    <div class="carousel-images">
+        <a href="Search-Links/12 project thing (Just gonna do 1)/!Doctype.html" target="_blank" class="carousel-image-a">
+            <img src="images/Anime photos not done/Chainsaw man 2.jpe" alt="Image 1" class="carousel-image active">
+        </a>
+        <a href="Search-Links/Anime-Search/Testing.html" target="_blank" class="carousel-image-a"> 
+            <img src="images/Anime photos not done/Jujutsu kaisen 2.jpg" alt="Image 2" class="carousel-image">
+        </a>
+        <a href="https://w1.zoro.se/anime-watch/one-piece/episode-1.html" target="_blank" class="carousel-image-a">
+            <img src="images/Anime - Photos/One piece.jpe" alt="Image 3" class="carousel-image">
+        </a>
+    </div>
+    <button class="nav next" onclick="nextSlide()">&#9654;</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Menu Button -->
+<button class="menu-button" onclick="toggleMenu()">Menu</button>
+      <nav id="menu" class="menu">
+          <div class="menu-header">
+              <span class="menu-text">Menu</span>
+              <button class="close-button" onclick="toggleMenu()">✖</button>
+          </div>
+          <ul>
+          
+              <li><a href="Search-Links/Anime-Search/Testing.html">Anime ranking</a></li>
+              <li><a href="Search-Links/12 project thing (Just gonna do 1)/!Doctype.html">Project 1</a></li>
+              
+          </ul>
+      </nav>
+
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>

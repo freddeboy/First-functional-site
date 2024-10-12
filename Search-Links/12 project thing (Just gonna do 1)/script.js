@@ -44,12 +44,6 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
                 case 'chat gtp':
                     window.location.href = 'https://chat.openai.com/';
                     break;
-
-                case 'project 1':
-                case 'project1':
-                
-                    window.location.href = 'Search-Links/12 project thing (Just gonna do 1)/!Doctype.html';
-                    break;
            
 
 
@@ -74,44 +68,6 @@ function search(input) {
     // Handle case where no matches found
     alert('No matches found');
 }
-
-
-
-
-
-// carousel    (not 100% sure)
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-image');
-const slides2 = document.querySelectorAll('.carousel-image-a');
-
-function showSlide(index) {
-    slides[currentSlide].classList.remove('active');
-    slides2[currentSlide].classList.remove('active');
-
-    currentSlide = (index + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
-    slides2[currentSlide].classList.add('active');
-
-}
-
-function prevSlide() {
-    showSlide(currentSlide - 1);
-}
-
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
-
-// Initialize the carousel by showing the first slide
-showSlide(currentSlide);
-
-
-
-
-
-
-
-
 
 
 // Menu button
