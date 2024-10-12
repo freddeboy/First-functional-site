@@ -45,8 +45,9 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
                     window.location.href = 'https://chat.openai.com/';
                     break;
 
-                case 'project 1':
-                case 'project1':
+                    case 'project 1':
+                    case 'project1':
+                    case 'project  1':
                 
                     window.location.href = 'Search-Links/12 project thing (Just gonna do 1)/!Doctype.html';
                     break;
