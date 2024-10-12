@@ -1,0 +1,278 @@
+
+body {
+	background: rgba(0, 0, 0, 0.9);
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.wrapper {
+	width: 100%;
+	max-width: 1300px;
+	margin: 20px auto;
+	padding: 0;
+	background: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.9);
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+
+
+
+
+/* Row */
+.row {
+	padding: 5px 0;
+	height: 110px;
+	font-size: 16px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.2s ease-out;
+	border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+
+	
+}
+
+.row ul {
+	margin: 0;
+	padding: 0;
+	text-align: center; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+ }
+
+ .row li {
+	margin: 0;
+	font-size: 16px;
+	font-weight: normal;
+	list-style: none;
+	display: inline-block;
+	width: 20%;
+	box-sizing: border-box;
+}
+
+.row ul li {
+	padding: 5px 10px 5px 10px;
+}
+
+
+
+/* Row hover */
+.row.expanded {
+    background-color: rgba(26, 26, 26, 0.9);
+    height: 163px;
+}
+
+@media only screen and (max-width: 767px) {
+	.row:hover {
+		height: 85px;
+   }
+}
+@media only screen and (max-width: 359px) {
+	.row:hover {
+		height: 105px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+/* Title */
+.title {
+	padding: 24px 0px 0 0px;
+	margin: 0 auto; 
+	height: 45px;
+	font-size: 0;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-left: 3px solid rgba(255, 255, 255, 0.1);
+	width: 100%; 
+	text-align: center; 
+ }
+ 
+ .title:hover {
+	height: 45px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-left: 3px solid rgba(255, 255, 255, 0.1);
+ }
+ 
+ .title ul {
+	display: flex;
+	justify-content: center; 
+	padding: 0;
+	margin: 0; 
+	list-style: none; 
+ }
+ 
+ .title ul li {
+	padding: 0 2%;
+	flex: 1; 
+	text-align: center; 
+ }
+
+
+
+
+
+
+
+
+
+/* Secret text */
+ul.more-content li {
+	position: relative;
+	top: 3px;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px 0px;
+	display: block;
+	height: 150px;
+	width: 95%;
+	color: rgba(128, 128, 128, 0.9);
+	text-align: center; 
+}
+@media only screen and (max-width: 767px) {
+	ul.more-content li {
+		font-size: 11px;
+   }
+}
+
+.small {
+	color: rgba(102, 102, 102, 0.9);
+	font-size: 10px;
+	padding: 0 10px;
+	margin: 0;
+}
+@media only screen and (max-width: 767px) {
+	.small {
+		display: none;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Side colours*/
+.normal {  /*Average*/
+   border-left: 3px solid rgba(28, 97, 108, 1);
+}
+.normal:hover {
+   border-left: 3px solid rgba(79, 192, 210, 1);
+}
+
+.No-more-content {
+   border-left: 3px solid rgba(157, 121, 25, 0.7);
+}
+.No-more-content:hover {
+   border-left: 3px solid rgba(231, 196, 104, 0.7);
+}
+.Links-not-working { 
+   border-left: 3px solid rgba(200, 47, 18, 1);
+}
+.Links-not-working:hover {
+   border-left: 3px solid rgba(235, 118, 85, 1);
+}
+
+.Nothing-works { 
+	border-left: 3px solid rgb(154, 17, 17);
+}
+.Nothing-works:hover {
+	border-left: 3px solid rgb(215, 10, 10);
+}
+
+.mlb {
+	border-left: 3px solid rgba(29, 110, 75, 1);
+ }
+ .mlb:hover {
+	border-left: 3px solid rgba(82, 210, 154, 1);
+ }
+
+
+
+
+/* Side*/
+.normal a, .mlb a, .No-more-content a, .Links-not-working a, .Nothing-works a {
+   text-decoration: none;
+   transition: color 0.2s ease-out;
+}
+.normal a {
+   color: rgb(240, 240, 240);
+}
+.normal a:hover {
+   color: rgb(240, 240, 240);
+}
+
+.No-more-content a {
+   color: rgb(240, 240, 240);
+}
+.No-more-content a:hover {
+   color: rgb(240, 240, 240);
+}
+.Links-not-working a {
+   color: rgb(240, 240, 240);
+}
+.Links-not-working a:hover {
+   color: rgb(240, 240, 240);
+}
+.Nothing-works a {
+	color: rgb(240, 240, 240);
+}
+.Nothing-works a:hover {
+	color: rgb(240, 240, 240);
+}
+
+
+.mlb a {
+	color: rgb(240, 240, 240);
+ }
+ .mlb a:hover {
+	color: rgb(240, 240, 240);
+ }
+
+
+ 
+
+
+
+/*Klick momentet*/
+
+.normal.expanded {
+    border-left: 3px solid rgba(79, 192, 210, 1);
+}
+.Nothing-works.expanded {
+    border-left: 3px solid rgb(215, 10, 10);
+}
+
+.No-more-content.expanded {
+    border-left: 3px solid rgba(231, 196, 104, 0.7);
+}
+.Links-not-working.expanded {
+    border-left: 3px solid rgba(235, 118, 85, 1);
+}
+
+.mlb.expanded {
+    border-left: 3px solid rgba(82, 210, 154, 1);
+}
