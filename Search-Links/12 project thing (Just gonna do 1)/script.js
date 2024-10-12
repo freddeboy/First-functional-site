@@ -29,7 +29,7 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
                 case 'anime rankings':
                 case 'animerankings':
                 case 'anime':
-                    window.location.href = 'Search-Links/Anime-Search/Testing.html';
+                    window.location.href = 'Search-Links/Anime-Search/index.html';
                     break;
                 case 'Cook':
                 case 'Cookbook':
